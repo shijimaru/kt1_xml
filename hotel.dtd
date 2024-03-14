@@ -1,0 +1,37 @@
+<!ELEMENT hotel (visitors, staff, rooms, breakfasts, raspisanie_uborki)>
+<!ELEMENT visitors (visitor+)>
+<!ATTLIST visitor id ID #REQUIRED>
+<!ELEMENT visitor (name, surname, lastname, age, phone, number_room, cost_room)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT number_room (#PCDATA)>
+<!ELEMENT cost_room (#PCDATA)>
+<!ELEMENT staff (staf+)>
+<!ELEMENT staf (name, job, age, salary, term_work)>
+<!ATTLIST staf id ID #REQUIRED>
+<!ELEMENT job (#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+<!ELEMENT term_work (#PCDATA)>
+<!ELEMENT rooms (room+)>
+<!ELEMENT room (number, size, bed_count, class)>
+<!ATTLIST room id ID #REQUIRED>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT size (#PCDATA)>
+<!ELEMENT bed_count (#PCDATA)>
+<!ELEMENT class (#PCDATA)>
+<!ELEMENT breakfasts (breakfast+)>
+<!ELEMENT breakfast (eat_count, cost, star)>
+<!ATTLIST breakfast id ID #REQUIRED>
+<!ELEMENT eat_count (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT star (#PCDATA)>
+<!ELEMENT raspisanie_uborki (raspisanie+)>
+<!ELEMENT raspisanie (time, staff_count, item_count, cost)>
+<!ATTLIST raspisanie id ID #REQUIRED>
+<!ELEMENT time (#PCDATA)>
+<!ELEMENT staff_count (#PCDATA)>
+<!ELEMENT item_count (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
